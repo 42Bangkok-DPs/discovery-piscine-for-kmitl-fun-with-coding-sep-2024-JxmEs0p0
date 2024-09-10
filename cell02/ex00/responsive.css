@@ -1,0 +1,24 @@
+table ,td {
+    border: 0.5px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+td:nth-child(1) {
+    background-color: rgb(132, 0, 255);
+    width: 300px
+}
+td:nth-child(2) {
+    background-color: rgb(0, 255, 55);
+    width: 300px
+}
+td {
+    padding: 100px;
+    text-align: left;
+    font-size: xx-large;
+}
+
+@media (max-width: 768px) {
+    td {
+        font-size: 14px;
+    }
+}
