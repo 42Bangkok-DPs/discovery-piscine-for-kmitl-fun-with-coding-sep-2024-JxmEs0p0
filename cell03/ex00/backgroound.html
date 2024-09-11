@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>button random colors</title>
+    <link rel="stylesheet" href="backgroound.css">
+</head>
+<body>
+    <button onclick="changeBackgroundColor()">random</button>
+</body>
+</html>
+<script>
+    function changeBackgroundColor() {
+        // สร้างสีสุ่มในรูปแบบ hex
+        let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        // เปลี่ยนสีพื้นหลังของ body
+        document.body.style.backgroundColor = randomColor;
+    }
+</script>
